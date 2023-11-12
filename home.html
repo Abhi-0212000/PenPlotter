@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PenPlotter</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link rel="stylesheet" herf="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="home.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="centerbackground">
+            <div class="leftwidget">
+                <form>
+                    <input class="textbox" type="number" id="number" placeholder="Number of iterations" min="1" max="200" required>
+                    <select class="dropdown">
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="15">15</option>
+                    </select>
+                    <!-- <button class="submit-button">Start</button> -->
+                    <button class="submit-button" onclick="sendData()">Start</button>
+                </form>
+            </div>
+
+            <div class="rightwidget">
+                <form>
+                <button class="home-button">Home</button>
+                <div class="progressbar-container">
+                    <div class="progressbar" style="width: 0%;"></div>
+                </div>
+                <div class="emergency-stop">Emergency Stop</div>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
