@@ -100,7 +100,7 @@ form {
 
 .textbox {
     background-color: #555555;
-    color: rgb(223, 40, 40);
+    color: rgb(255, 255, 255);
     border-radius: 4px;
     width: 75%;
     height: 10%;
@@ -184,4 +184,8 @@ form {
 
 .emergency-stop.red {
     background-color: red;
+}
+
+marquee {
+    text-align: center;
 }
