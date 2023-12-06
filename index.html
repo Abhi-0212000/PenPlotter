@@ -20,11 +20,13 @@
             <div class="leftwidget">
                 <form>
                     <input class="textbox" type="number" id="number" placeholder="Number of iterations" min="1" max="200" required>
-                    <select class="dropdown">
+                    <select class="dropdown" id="dropdown" title="Select an option" required>
+                        <option value="" selected disabled>Width of house</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
                         <option value="5">5</option>
-                        <option value="10" selected>10</option>
-                        <option value="15">15</option>
                     </select>
+					
                     <!-- <button class="submit-button">Start</button> -->
                     <button class="submit-button" onclick="sendData()">Start</button>
                 </form>
@@ -32,12 +34,10 @@
 
             <div class="rightwidget">
                 <form>
-                <button class="home-button">Home</button>
-                <div class="progressbar-container">
-                    <div class="progressbar" style="width: 0%;"></div>
-                </div>
-                <div class="emergency-stop">Emergency Stop</div>
-            </form>
+					<button id="button" type="button" class="home-button" onclick="sendHomeData()">Home</button>
+					<div>Workshop batch 26</div>
+					<marquee behavior="scroll" direction="up">Pen-Plotter done by<em><br>Abhishek Nannuri<br>Nagendra Mudarapu<br>Muralidhar Appana<br>Jaswanth Pendala<br>Aarya Iyer</em></marquee>
+				</form>
             </div>
         </div>
     </div>
